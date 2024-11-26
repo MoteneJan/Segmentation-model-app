@@ -98,13 +98,20 @@ if page == "Home":
     5. **Explore other features**: You can also view insights and learn about the team in the other pages.
     """)
 
-    # Add download section for project documentation
-    st.markdown("Welcome, you can access and download our project documentation here.")
-    st.download_button(
-        label="Download as PDF",
-        data="Segmentation_Presentation.pdf",
-        mime="application/pdf"
-    )
+# Display a welcome message
+st.markdown("Welcome, you can access and download our project documentation here.")
+
+# Read the PDF file into memory
+with open("Segmentation_Presentation.pdf", "rb") as file:
+    pdf_content = file.read()
+
+# Create a download button
+st.download_button(
+    label="Download as PDF",
+    data=pdf_content,  # Pass the file content
+    file_name="Segmentation_Presentation.pdf",  # Specify the file name for download
+    mime="application/pdf"  # Specify the MIME type
+)
 
 # Predictions Page
 if page == "Predictions":
