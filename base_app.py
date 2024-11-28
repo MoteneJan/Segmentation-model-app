@@ -105,7 +105,7 @@ if page == "Home":
     with open("Segmentation_Presentation.pdf", "rb") as file:
         pdf_content = file.read()
     
-    Create a download button
+    # Create a download button
     st.download_button(
         label="Download as PDF",
         data=pdf_content,  # Pass the file content
