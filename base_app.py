@@ -86,7 +86,7 @@ segmentation_model = load_segmentation_model()
 if page == "Home":
     st.title("Welcome to the Segmentation Model 📊🛰️")
     st.markdown("""This application allows users to upload satellite images and receive segmentation predictions based on a trained model.""")
-    st.image("New_image.png")
+    st.image("Images/New_image.png")
 
     # Add Instructions Section
     st.subheader("How to Use the Application:")
@@ -112,14 +112,6 @@ if page == "Home":
         file_name="Segmentation_Presentation.pdf",  # Specify the file name for download
         mime="application/pdf"  # Specify the MIME type
     )
-    
-    # Add download section for project documentation
-    # st.markdown("Welcome, you can access and download our project documentation here.")
-    # st.download_button(
-    #     label="Download as PDF",
-    #     data="Segmentation_Presentation.pdf",
-    #     mime="application/pdf"
-    # )
 
 # Predictions Page
 if page == "Predictions":
@@ -128,9 +120,9 @@ if page == "Predictions":
 
     # Display sample images
     sample_images = {
-        "Sample Image 1": "test_image1.jpg",
-        "Sample Image 2": "test_image2.jpg",
-        "Sample Image 3": "test_image3.jpg"
+        "Sample Image 1": "Images/test_image1.jpg",
+        "Sample Image 2": "Images/test_image2.jpg",
+        "Sample Image 3": "Images/test_image3.jpg"
     }
 
     st.subheader("Sample Images")
@@ -250,43 +242,43 @@ elif page == "Meet the team":
     team_members = [
         {
             "name": "EMMANUEL NKHUBALALE - Data Science Intern | Team Lead",
-            "photo": "Nkadimeng.jpg",
+            "photo": "Images/Nkadimeng.jpg",
             "email": "physimanuel@gmail.com",
             "linkedin": "https://www.linkedin.com/in/nkhubalale-emmanuel-nkadimeng/"
         },
         {
             "name": "NOLWAZI MNDEBELE - Data Science Intern | Project Manager",
-            "photo": "Nolwazi.jpg",
+            "photo": "Images/Nolwazi.jpg",
             "email": "mndebelenf@gmail.com",
             "linkedin": "https://linkedin.com/in/nolwazi"
         },
         {
             "name": "CARROLL TSHABANE - Data Science Intern",
-            "photo": "Carroll.jpg",
+            "photo": "Images/Carroll.jpg",
             "email": "ctshabane@gmail.com",
             "linkedin": "https://www.linkedin.com/in/carroll-tshabane-bb816475/"
         },
         {
             "name": "JAN MOTENE - Data Science Intern",
-            "photo": "Jan.jpg",
+            "photo": "Images/Jan.jpg",
             "email": "motenejo@gmail.com",
             "linkedin": "https://www.linkedin.com/in/jan-motene-4864771b4/"
         },
         {
             "name": "ZAMANCWABE MAKHATHINI - Data Science Intern/ Engineer",
-            "photo": "Zama.jpg",
+            "photo": "Images/Zama.jpg",
             "email": "zamancwabemakhathini@gmail.com",
             "linkedin": "https://linkedin.com/in/zamancwabe"
         },
         {
             "name": "MUWANWA TSHIKOVHI - Data Science Intern",
-            "photo": "Muwanwa.jpg",
+            "photo": "Images/Muwanwa.jpg",
             "email": "tshikovhimuwanwa@gmail.com",
             "linkedin": "https://www.linkedin.com/in/muwanwa-tshikovhi-64a5b6196/"
         },
         {
             "name": "SIBUKISO NHLENGETHWA - Data Science Intern",
-            "photo": "Sibukiso.jpg",
+            "photo": "Images/Sibukiso.jpg",
             "email": "sibukisot@gmail.com",
             "linkedin": "https://linkedin.com/in/sibukiso"
         }
