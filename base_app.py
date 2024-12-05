@@ -298,7 +298,6 @@ st.markdown(
     """
     <div class="footer" style="font-size: 12px;">
         This application aims to assist in optimizing telecommunications network design by providing accurate segmentation outputs from satellite imagery.<br>
-        Future updates will include height prediction capabilities to enhance design accuracy.<br>
         Height Segmentation Model Team B &copy; 2024
     </div>
     """,
